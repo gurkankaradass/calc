@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .deger .islem{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="deger">
+        <input type="number" id="text1">
+        <input type="number" id="text2">
+        <span>=</span>
+        <input type="number" id="sonuc">
+    </div>
+    <div id="islem">
+        <button onclick="topla()">TOPLA</button>
+        <button onclick="cikar()">ÇIKAR</button>
+        <button onclick="carp()">ÇARP</button>
+        <button onclick="bol()">BÖL</button>
+    </div>
+</body>
+<script>
+    function topla(){
+        var x = Number(document.getElementById("text1").value);
+        var y = Number(document.getElementById("text2").value);
+        sonuc = x + y;
+        document.getElementById("sonuc").value = sonuc
+    }
+    function cikar(){
+        var x = Number(document.getElementById("text1").value);
+        var y = Number(document.getElementById("text2").value);
+        sonuc = x - y
+        document.getElementById("sonuc").value = sonuc
+    }
+    function carp(){
+        var x = Number(document.getElementById("text1").value);
+        var y = Number(document.getElementById("text2").value);
+        sonuc = x * y
+        document.getElementById("sonuc").value = sonuc
+    }
+    function bol(){
+        var x = Number(document.getElementById("text1").value);
+        var y = Number(document.getElementById("text2").value);
+        sonuc = x / y
+        document.getElementById("sonuc").value = sonuc
+    }
+</script>
+</html>
